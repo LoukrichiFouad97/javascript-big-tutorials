@@ -37,15 +37,15 @@ body {
 	position: absolute;
 	right: 10px;
 	transition: all 0.5s ease;
-  outline: 0;
-  cursor: pointer;
+	outline: 0;
+	cursor: pointer;
 }
 .add-btn:hover {
-  transform: translateY(-3px);
+	transform: translateY(-3px);
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 .add-btn:active {
-  transform: translateY(-1px);
+	transform: translateY(-1px);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,8 +82,8 @@ body {
 	padding: 1rem;
 	justify-content: space-between;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  background-color: #f4f4f4;
-  margin-bottom: 10px;
+	background-color: #f4f4f4;
+	margin-bottom: 10px;
 }
 
 .list span {
@@ -118,10 +118,15 @@ h3 {
 }
 
 .items-info .Completed span {
-	background-color: #03A9F4;
+	background-color: #03a9f4;
 	color: #fff;
 	padding: 1px 3px;
 	font-weight: bold;
 	border-radius: 3px;
 	font-size: 16px;
+}
+
+.active {
+	background: linear-gradient(to right, #f4f4f4, #e6e6e6);
+	transform: scale(0.98);
 }
