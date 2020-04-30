@@ -1,6 +1,9 @@
 const addItemBtn = document.getElementById("add-btn");
 const list = document.querySelector(".list");
 const userInput = document.getElementById("user-input");
+const tasks = document.getElementById("tasks");
+const completed = document.getElementById("completed");
+let task = 0;
 
 class AddItems {
 	constructor(item) {
@@ -10,6 +13,7 @@ class AddItems {
 	addItem() {
 		if (this.item.value) {
 			this.addItemUI();
+			this.updateTasks("+");
 		}
 	}
 
@@ -32,7 +36,17 @@ class AddItems {
 	delItem(btn, item) {
 		btn.addEventListener("click", () => {
 			item.remove();
+			this.updateTasks("-");
 		});
+	}
+
+	updateTasks(operator) {
+		if (operator === "+") {
+			task++;
+		} else if (operator === "-") {
+			task--;
+		}
+		tasks.textContent = task.toString();
 	}
 }
 
@@ -47,4 +61,3 @@ userInput.addEventListener("keypress", (e) => {
 		newItem.addItem();
 	}
 });
-
