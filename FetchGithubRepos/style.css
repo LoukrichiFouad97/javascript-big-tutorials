@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.repos-container {
+	background-color: #e6e6e6;
+	width: 800px;
+	margin: auto;
+	padding: 20px;
+}
+.get-repo {
+	display: flex;
+	width: 100%;
+}
+
+.get-repo .git-username {
+	flex-grow: 1;
+	height: 54px;
+	padding: 15px 20px;
+	font-size: 20px;
+	border: 0;
+}
+.get-repo .git-username:focus {
+	outline: 2px solid #f44366;
+}
+.get-repo .get-btn {
+	flex-basis: 140px;
+	font-size: 18px;
+	font-weight: normal;
+	background-color: #f44366;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.show-data {
+	background-color: #b6b6b6;
+	/* padding: 10px; */
+	margin-top: 30px;
+}
+.show-data > div {
+	background-color: #f80;
+	padding: 10px;
+	font-size: 18px;
+	width: 100%;
+}
+.show-data a {
+	background-color: green;
+}
+.show-data span{
+	background-color: red;
+}
